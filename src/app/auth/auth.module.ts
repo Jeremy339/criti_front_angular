@@ -10,6 +10,7 @@ import { AuthService } from './services/auth.service';
 
 
 @NgModule({
+
   providers:[
     AuthService
   ],
