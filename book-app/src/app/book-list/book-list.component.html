@@ -1,0 +1,23 @@
+<p>book-list works!</p>
+<div class="container">
+  <p-toolbar>
+    <div class="p-toolbar-group-left">
+      <span class="p-toolbar-group-left-text">¡MEJOR CALIFICADOS POR LOS USUARIOS!</span>
+    </div>
+    <div class="p-toolbar-group-right">
+      <button pButton type="button" label="Categorías"></button>
+      <button pButton type="button" label="Mejor Calificados"></button>
+      <button pButton type="button" label="Recomendados"></button>
+    </div>
+  </p-toolbar>
+
+  <div class="grid">
+    <div *ngFor="let book of books" class="col-12">
+      <p-card header="{{ book.title }} - {{ book.author }}" class="book-card">
+        <img src="{{ book.coverImage }}" alt="{{ book.title }}" class="book-cover">
+        <p-rating [value]="book.rating" readonly></p-rating>
+        <button pButton type="button" label="Leer más"></button>
+      </p-card>
+    </div>
+  </div>
+</div>
