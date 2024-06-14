@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-color: #87CEEB; /* Cambia este valor por el color celeste que desees */
+
+}
+
+.surface-ground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.min-w-screen {
+    min-width: 100vw;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.surface-card {
+    background: rgba(0, 0, 0, 0.7);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    max-width: 400px;
+    width: 50%;
+}
+
+.surface-card img {
+    margin-bottom: 20px;
+    width: 100px;
+}
+
+.surface-card label {
+    color: black;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.surface-card input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2em;
+}
+
+.surface-card button {
+    width: 100%;
+    padding: 15px;
+    background-color: #eb5e28;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.2em;
+}
+
+.surface-card button:hover {
+    background-color: #45a049;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-900 {
+    font-weight: 900;
+}
+
+.text-3xl {
+    font-size: 3rem;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.mb-5 {
+    margin-bottom: 25px;
+}
+
+.motivational-section {
+    background: white;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 2px solid black;
+    max-width: 400px;
+    width: 50%;
+    height: 583px;
+}
+
+.motivational-content {
+    color: black;
+    text-align: center;
+}
+
+.circular-border {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.motivational-buttons {
+    margin-top: 45px; /* Reduciendo el margen superior */
+    text-align: center; /* Centra los botones */
+}
+
+.motivational-buttons button {
+    width: 100%;
+    padding: 15px;
+    background-color: #eb5e28;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.2em;
+    margin-bottom: 10px; /* Agrega margen inferior */
+}
+
+.motivational-buttons button:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,19 @@
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: orange;
+    border: 1px solid black;
+  }
+  
+  .menu-image {
+    margin-right: 20px;
+  }
+  
+  .menu-image img {
+    width: 50px;
+    height: auto;
+    border: 1px solid black;
+  }
+  

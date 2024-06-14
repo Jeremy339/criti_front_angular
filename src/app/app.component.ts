@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,30 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'front_angular_nest';
+  items: MenuItem[] = [];
+
+  ngOnInit() {
+    this.items = [
+      {
+        label: 'Categorias',
+        icon:'pi pi-fw pi-id-card',
+        routerLink: ['/admin/categoria']
+      },
+     {
+        label: 'Mejores calificados',
+        icon:'pi pi-fw pi-id-card',
+        routerLink: ['/admin/categoria']
+      }, 
+      {
+        label: 'Recomendados',
+        icon:'pi pi-fw pi-id-card',
+        routerLink: ['/admin/categoria'],
+      } 
+    ];
+  }
+
 }
+
+

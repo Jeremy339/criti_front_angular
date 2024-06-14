@@ -9,6 +9,7 @@ import { AppLayoutModule } from './layout/app.layout.module';
 import { CategoriaService } from './inventario/services/categoria.service';
 import { TableModule } from 'primeng/table'
 import { InventarioModule } from './inventario/inventario.module';
+import { MenubarModule } from 'primeng/menubar';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { InventarioModule } from './inventario/inventario.module';
     AdminRoutingModule,
     AppLayoutModule,
     TableModule,
-    InventarioModule
+    InventarioModule,
+    MenubarModule
 
   ],
   providers: [

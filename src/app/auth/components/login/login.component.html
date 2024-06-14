@@ -1,45 +1,47 @@
+<p>login works!</p>
 <h1>Ingresar</h1>
-{{loginForm.value | json}}
+{{loginForm.value |json}}
 {{loginForm.valid}}
-<form [formGroup]="loginForm">
-    <label>Ingresa Correo: </label>
-    <input type="email" formControlName="email">
-    <br>
-    <label>Ingrese Contraseña: </label>    
-    <input type="password" formControlName="password">
-    <br>
-    <button (click)="funIngresar()" [disabled]="!loginForm.valid">Ingresar</button>
-</form>
+<div class="container" style="background-image: url(‘https://png.pngtree.com/background/20210711/original/pngtree-cartoon-reading-day-h5-background-picture-image_1083241.jpg
+’);">
+    <form [formGroup]="loginForm">
+        <label>Ingrese Correo:</label>
+        <input type="email" formControlName="email">
+        <br>
+        <label>Ingrese contraseña:</label>
+        <input type="password" formControlName="password">
+        <br>
+        <button (click)="funIngresar()" [disabled]="!loginForm.valid">Ingresar</button>
+    </form>
 
-<div class="surface-ground flex align-items-center justify-content-center min-h-screen min-w-screen overflow-hidden">
-    <div class="flex flex-column align-items-center justify-content-center">
-        
-        <div style="border-radius:56px; padding:0.3rem; background: linear-gradient(180deg, var(--primary-color) 10%, rgba(33, 150, 243, 0) 30%);">
-            <div class="w-full surface-card py-8 px-5 sm:px-8" style="border-radius:53px">
-                <div class="text-center mb-5">
-                    <img src="assets/demo/images/login/avatar.png" alt="Image" height="50" class="mb-3">
-                    <div class="text-900 text-3xl font-medium mb-3">Welcome, Isabel!</div>
-                    <span class="text-600 font-medium">Sign in to continue</span>
-                </div>
+    <div class="surface-ground flex align-items-center justify-content-center min-h-screen min-w-screen overflow-hidden">
+        <div class="motivational-section">
+            <div class="motivational-content">
+                <h1>Bienvenidos</h1>
+                <img src="https://static.vecteezy.com/system/resources/previews/000/660/248/non_2x/education-book-logo-vector.jpg" alt="Motivation Image" class="circular-border">
+                <p>"En el mágico reino de las letras, cada libro es un portal hacia un universo infinito de posibilidades, donde las palabras bailan al ritmo de la imaginación y las páginas susurran secretos ancestrales. En este santuario de sabiduría y maravilla, exploran mundos desconocidos y descubren el poder transformador de la mente humana. En las estanterías de una librería, los sueños toman forma, las ideas se entrelazan y los corazones encuentran consuelo en la belleza de la palabra escrita."</p>
+            </div>
+            <div class="motivational-buttons">
+                <button class="p-3 text-xl">Iniciar Sesión</button>
+                <button class="p-3 text-xl">Registrarse</button>
+            </div>
+        </div>
+        <div class="surface-card py-8 px-5 sm:px-8">
+            <div class="text-center mb-5">
+                <img src="assets/demo/images/login/avatar.png" alt="Image" class="mb-3">
+                <div class="text-900 text-3xl font-medium mb-3">Welcome, Isabel!</div>
+                <span class="text-600 font-medium">Sign in to continue</span>
+            </div>
 
-                <div>
-                    <label for="email1" class="block text-900 text-xl font-medium mb-2">Email</label>
-                    <input id="email1" type="text" placeholder="Email address" pInputText class="w-full md:w-30rem mb-5" style="padding:1rem">
+            <div>
+                <label for="email1">Email</label>
+                <input id="email1" type="text" placeholder="Email address" pInputText class="mb-5">
 
-                    <label for="password1" class="block text-900 font-medium text-xl mb-2">Password</label>
-                    
+                <label for="password1">Password</label>
+                <input id="password1" type="password" placeholder="Password" pInputText class="mb-5">
 
-                    <div class="flex align-items-center justify-content-between mb-5 gap-5">
-                        <div class="flex align-items-center">
-                           
-                            <label for="rememberme1">Remember me</label>
-                        </div>
-                        <a class="font-medium no-underline ml-2 text-right cursor-pointer" style="color: var(--primary-color)">Forgot password?</a>
-                    </div>
-                    <button pButton pRipple label="Sign In" class="w-full p-3 text-xl" [routerLink]="['/']"></button>
-                </div>
+                <button pButton pRipple label="Sign In" class="p-3 text-xl" [routerLink]="['/']"></button>
             </div>
         </div>
     </div>
 </div>
-

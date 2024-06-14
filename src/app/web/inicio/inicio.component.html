@@ -1,7 +1,109 @@
-<p>inicio works!</p>
-<a routerLink="/web">Inicio</a>|
-<a routerLink="/web/categoria">Categoria Libros</a>|
-<a routerLink="/web/calificados">Mejor Calificados</a>|
-<a routerLink="/web/libro">Libro Seleccionado PRUEBA </a>|
-<a routerLink="/web/recomendados">Recomendados</a>|
+<div class="card">
+    <p-menubar [model]="items"></p-menubar>
+  
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Buscar...">
+        <button class="search-button">
+            <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Buscar" class="search-icon">
+        </button>
+    </div>
+
+    <a routerLink="/ruta-de-tu-apartado">
+      <img src="https://cdn-icons-png.flaticon.com/512/1626/1626656.png" alt="Imagen" class="menu-image">
+    </a>
+</div>
+
+<div class="background">
+    <div class="book-card">
+        <img src="https://media.revistagq.com/photos/6040d0f7fd84f6725ca725e5/master/w_320%2Cc_limit/9789504944171.jpg" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">Las mil y una noches</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.5</span>
+            </div>
+            <button class="favorite-button">
+                <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="Corazón" class="heart-icon">
+                Marcado como favorito
+            </button>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://media.revistagq.com/photos/6040d3feea88c7db6f596e49/master/w_320%2Cc_limit/61aTf+8b6qL.jpg" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">El arte de la guerra</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.7</span>
+            </div>
+            <button class="favorite-button">
+                <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="Corazón" class="heart-icon">
+                Marcado como favorito
+            </button>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPEB24vZB3Jf9qpC1m4kSWQK0pTlY4OB9_jA&s" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">El principito</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.8</span>
+            </div>
+            <button class="favorite-button">
+                <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="Corazón" class="heart-icon">
+                Marcado como favorito
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="background">
+    <div class="book-card">
+        <img src="https://www.mrbooks.com/mrbooks/portadas/9789585234048.webp" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">Harry Potter y la piedra filosofal</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.9</span>
+            </div>
+            <button class="favorite-button">
+                <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="Corazón" class="heart-icon">
+                Marcado como favorito
+            </button>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://www.rae.es/sites/default/files/portada_cien_anos_de_soledad_0.jpg" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">Cien años de soledad</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.6</span>
+            </div>
+            <button class="favorite-button">
+                <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="Corazón" class="heart-icon">
+                Marcado como favorito
+            </button>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/a6/18/a618be10eae5c2a608ec6e22e6917e29.jpg" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">Don Quijote de la Mancha</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.4</span>
+            </div>
+            <button class="favorite-button">
+                <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="Corazón" class="heart-icon">
+                Marcado como favorito
+            </button>
+        </div>
+    </div>
+</div>
+
+
 <router-outlet/>
+
+
