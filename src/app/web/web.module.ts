@@ -6,7 +6,6 @@ import { InicioComponent } from './inicio/inicio.component';
 import { MenubarModule } from 'primeng/menubar';
 import { RouterModule } from '@angular/router';
 
-
 @NgModule({
   declarations: [
     InicioComponent
@@ -15,7 +14,8 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     WebRoutingModule,
     MenubarModule,
-    RouterModule
+    RouterModule,
+    
   ]
 })
 export class WebModule { }

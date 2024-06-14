@@ -20,7 +20,7 @@ export class InicioComponent implements OnInit {
      {
         label: 'Mejores calificados',
         icon:'pi pi-fw pi-id-card',
-        routerLink: ['web/calificados']
+        routerLink: ['/web/calificados']
       }, 
       {
         label: 'Libros',
@@ -31,7 +31,7 @@ export class InicioComponent implements OnInit {
         label: 'Recomendados',
         icon:'pi pi-fw pi-id-card',
         routerLink: ['/web/recomendados'],
-      } 
+      },
     ];
   }
 
