@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { LibroService } from '../../services/producto.service';
 
 @Component({
   selector: 'app-producto',
@@ -6,25 +7,24 @@ import { Component } from '@angular/core';
   styleUrl: './producto.component.scss'
 })
 export class ProductoComponent {
-  libros: any[] = [{ id: 1, titulo: "El Ice Cube", autor: "Autor Anónimo", sinopsis: "La historia continua", categoria_id: 1 },
-    { id: 1, titulo: "El Ice Cube", autor: "Autor Anónimo", sinopsis: "La historia continua", categoria_id: 1 },
-    { id: 1, titulo: "El Ice Cube", autor: "Autor Anónimo", sinopsis: "La historia continua", categoria_id: 1 },
-    { id: 1, titulo: "El Ice Cube", autor: "Autor Anónimo", sinopsis: "La historia continua", categoria_id: 1 },
-    { id: 1, titulo: "El Ice Cube", autor: "Autor Anónimo", sinopsis: "La historia continua", categoria_id: 1 },
-    { id: 1, titulo: "El Ice Cube", autor: "Autor Anónimo", sinopsis: "La historia continua", categoria_id: 1 },
-    { id: 1, titulo: "El Ice Cube", autor: "Autor Anónimo", sinopsis: "La historia continua", categoria_id: 1 },
-    { id: 1, titulo: "El Ice Cube", autor: "Autor Anónimo", sinopsis: "La historia continua", categoria_id: 1 },
-    { id: 1, titulo: "El Ice Cube", autor: "Autor Anónimo", sinopsis: "La historia continua", categoria_id: 1 },
-    { id: 1, titulo: "El Ice Cube", autor: "Autor Anónimo", sinopsis: "La historia continua", categoria_id: 1 },
-    { id: 1, titulo: "El Ice Cube", autor: "Autor Anónimo", sinopsis: "La historia continua", categoria_id: 1 },
-    { id: 1, titulo: "El Ice Cube", autor: "Autor Anónimo", sinopsis: "La historia continua", categoria_id: 1 },
-    { id: 1, titulo: "El Ice Cube", autor: "Autor Anónimo", sinopsis: "La historia continua", categoria_id: 1 },
-    { id: 1, titulo: "El Ice Cube", autor: "Autor Anónimo", sinopsis: "La historia continua", categoria_id: 1 },
-    { id: 1, titulo: "El Ice Cube", autor: "Autor Anónimo", sinopsis: "La historia continua", categoria_id: 1 },
- 
-  ];
-  cols: any[] = []
+  private libroService = inject(LibroService)
+  cities: any = [
+    { name: 'New York', code: 'NY' },
+    { name: 'Rome', code: 'RM' },
+    { name: 'London', code: 'LDN' },
+    { name: 'Istanbul', code: 'IST' },
+    { name: 'Paris', code: 'PRS' }
+  ]
+  libros: any[] = [];
+  cols: any[] = [];
 
+  constructor() {
+    this.libroService.funListar().subscribe(
+      (res: any) => {
+        this.libros = res.data
+      }
+    )
+  }
   openNew() {
 
   }

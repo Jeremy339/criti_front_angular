@@ -1,7 +1,7 @@
 <div class="grid">
     <div class="col-12">
         <div class="card px-6 py-6">
-
+            <p-dropdown [options]="cities" optionLabel="name" placeholder="Select a City" />
             <p-toolbar styleClass="mb-4">
                 <ng-template pTemplate="left">
                     <div class="my-2">
@@ -11,6 +11,8 @@
                 </ng-template>
 
                 <ng-template pTemplate="right">
+                    <p-dropdown [options]="libros" optionLabel="name" [showClear]="true"
+                    placeholder="Filtrar por Categorias" />
                     <button pButton pRipple label="Exportar" icon="pi pi-upload" class="p-button-help"
                         (click)="dt.exportCSV()"></button>
                 </ng-template>
