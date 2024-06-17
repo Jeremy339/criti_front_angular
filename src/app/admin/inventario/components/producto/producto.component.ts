@@ -28,10 +28,10 @@ export class ProductoComponent {
   openNew() {
 
   }
-  editMateria(mate: any) {
+  editLibro(mate: any) {
 
   }
-  deleteMateria(mate: any) {
+  deleteLibro(mate: any) {
 
   }
 }
