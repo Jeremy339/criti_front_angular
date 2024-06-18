@@ -13,5 +13,7 @@ export class LibroService {
   funListar() {
     return this.http.get(`${this.baseUrl}/libro/back`)
   }
-
+  funGuardar(registro:any){
+    return this.http.post(`${this.baseUrl}/libro/back`, registro)
+  }
 }
