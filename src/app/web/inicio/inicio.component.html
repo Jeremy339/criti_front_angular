@@ -1,33 +1,43 @@
-<div class="card">
-    <p-menubar [model]="items"></p-menubar>
-  
+<!-- Barra superior -->
+<div class="card-menu">
     <div class="search-container">
         <input type="text" class="search-input" placeholder="Buscar...">
         <button class="search-button">
             <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Buscar" class="search-icon">
         </button>
     </div>
-
+    <p-menubar [model]="items"></p-menubar>
     <a routerLink="/ruta-de-tu-apartado">
-      <img src="https://cdn-icons-png.flaticon.com/512/1626/1626656.png" alt="Imagen" class="menu-image">
+        <img src="https://cdn-icons-png.flaticon.com/512/1626/1626656.png" alt="Imagen" class="menu-image">
     </a>
 </div>
 
+
+<div class="Recientes">Recientes</div>
+
+<!-- Tarjetas de libros -->
 <div class="background">
     <div class="book-card">
         <img src="https://media.revistagq.com/photos/6040d0f7fd84f6725ca725e5/master/w_320%2Cc_limit/9789504944171.jpg" alt="Imagen del libro" class="book-image">
         <div class="book-details">
-            <h3 class="book-title">Las mil y una noches</h3>
-            <div class="rating">
-                <span class="stars">★★★★★</span>
-                <span class="score">4.5</span>
-            </div>
-            <button class="favorite-button">
-                <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="Corazón" class="heart-icon">
-                Marcado como favorito
-            </button>
+          <h3 class="book-title">Las mil y una noches</h3>
+          <div class="rating">
+            <span class="stars">★★★★★</span>
+            <span class="score">4.5</span>
+          </div>
+          <div class="card flex justify-content-center">
+            <p-toast></p-toast>
+            <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+          </div>
+          <div class="card flex justify-content-center">
+            <!-- Botón para la ruta de botón -->
+            <button class="view-book-button" [routerLink]="['/categoria']">Ver libro</button>
+          </div>
         </div>
-    </div>
+      </div>
+      
+     
+
     <div class="book-card">
         <img src="https://media.revistagq.com/photos/6040d3feea88c7db6f596e49/master/w_320%2Cc_limit/61aTf+8b6qL.jpg" alt="Imagen del libro" class="book-image">
         <div class="book-details">
@@ -36,10 +46,13 @@
                 <span class="stars">★★★★★</span>
                 <span class="score">4.7</span>
             </div>
-            <button class="favorite-button">
-                <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="Corazón" class="heart-icon">
-                Marcado como favorito
-            </button>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button">Ver libro</button>
+            </div>
         </div>
     </div>
     <div class="book-card">
@@ -50,10 +63,13 @@
                 <span class="stars">★★★★★</span>
                 <span class="score">4.8</span>
             </div>
-            <button class="favorite-button">
-                <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="Corazón" class="heart-icon">
-                Marcado como favorito
-            </button>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button">Ver libro</button>
+            </div>
         </div>
     </div>
 </div>
@@ -67,10 +83,13 @@
                 <span class="stars">★★★★★</span>
                 <span class="score">4.9</span>
             </div>
-            <button class="favorite-button">
-                <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="Corazón" class="heart-icon">
-                Marcado como favorito
-            </button>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button">Ver libro</button>
+            </div>
         </div>
     </div>
     <div class="book-card">
@@ -81,10 +100,13 @@
                 <span class="stars">★★★★★</span>
                 <span class="score">4.6</span>
             </div>
-            <button class="favorite-button">
-                <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="Corazón" class="heart-icon">
-                Marcado como favorito
-            </button>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button">Ver libro</button>
+            </div>
         </div>
     </div>
     <div class="book-card">
@@ -95,13 +117,72 @@
                 <span class="stars">★★★★★</span>
                 <span class="score">4.4</span>
             </div>
-            <button class="favorite-button">
-                <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="Corazón" class="heart-icon">
-                Marcado como favorito
-            </button>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button">Ver libro</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <h1 class="hola">libros mas visitados</h1>
+    <div class="background">
+    <div class="book-card">
+        <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/a6/18/a618be10eae5c2a608ec6e22e6917e29.jpg" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">Don Quijote de la Mancha</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.4</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button">Ver libro</button>
+            </div>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/a6/18/a618be10eae5c2a608ec6e22e6917e29.jpg" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">Don Quijote de la Mancha</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.4</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button">Ver libro</button>
+            </div>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/a6/18/a618be10eae5c2a608ec6e22e6917e29.jpg" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">Don Quijote de la Mancha</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.4</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="Marcar como favorito"></p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button">Ver libro</button>
+            </div>
         </div>
     </div>
 </div>
 
 
-<router-outlet/>
+<router-outlet></router-outlet>

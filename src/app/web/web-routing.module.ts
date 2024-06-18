@@ -5,7 +5,7 @@ import { LibroComponent } from './libro/libro.component';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { CalificadosComponent } from './calificados/calificados.component';
 import { RecomendadosComponent } from './recomendados/recomendados.component';
-import { NosotrosComponent } from './nosotros/nosotros.component';
+
 
 const routes: Routes = [
       {
@@ -27,7 +27,8 @@ const routes: Routes = [
       {
         path: "recomendados",
         component: RecomendadosComponent
-      }, 
+      },
+       
     ]
 
 @NgModule({

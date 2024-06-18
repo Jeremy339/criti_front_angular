@@ -1,42 +1,48 @@
-.card {
+/* Estilos para la barra superior */
+.card-menu {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Para separar los elementos dentro de la tarjeta */
-    background-color: orange;
-    padding: 10px;
+    justify-content: space-between;
+    background-color: orange; /* Este es el fondo naranja */
+    padding: 8px;
 }
 
 .menu-image {
-    width: 50px; /* Ancho deseado */
-    height: auto; /* Altura automática para mantener la proporción */
-    margin-left: 20px; /* Ajusta el margen según sea necesario */
-    border: 2px solid black; /* Añade un borde sólido de color negro */
-    border-radius: 4px; /* Opcional: Añade bordes redondeados al borde de la imagen */
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-left: 30px;
 }
 
-//menu de busqueda
 .search-container {
     display: flex;
     align-items: center;
-    margin-left: auto; /* Empuja el contenedor hacia la derecha */
-    margin-right: 20px; /* Ajusta el margen derecho según sea necesario */
+    margin-bottom: 0; /* Asegurar que no haya margen inferior */
+    justify-content: flex-start;
+    padding-left: 20px;
+    margin-right: 950px; /* Asegurar que el menú se desplace a la derecha */
+    
 }
 
 .search-input {
     padding: 5px 10px;
-    border: 2px solid black; /* Añade un borde sólido de color negro */
-    border-radius: 4px 0 0 4px; /* Bordes redondeados a la izquierda */
+    border: 2px solid black;
+    border-radius: 4px 0 0 4px;
     outline: none;
     font-size: 1em;
+    width: 250px;
 }
 
 .search-button {
     padding: 5px 10px;
-    background-color: white; /* Color de fondo del botón */
-    border: 2px solid black; /* Añade un borde sólido de color negro */
-    border-left: none; /* Sin borde izquierdo para unirse con el campo de entrada */
-    border-radius: 0 4px 4px 0; /* Bordes redondeados a la derecha */
+    background-color: transparent; /* Fondo transparente */
+    border: 2px solid black;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
     cursor: pointer;
+   
 }
 
 .search-button .search-icon {
@@ -44,13 +50,18 @@
     height: 13px;
 }
 
-//cartas
+.menu-bar {
+    margin-left: auto; /* Mueve el menú más a la derecha */
+}
+
+/* Estilos para las cartas de libros */
+/* Estilos para las cartas de libros */
 .background {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    background-color: #CCC5B9;
-    flex-wrap: wrap; /* Permite que las cartas se envuelvan a la siguiente fila */
+    background-color: #ccc5b9;
+    flex-wrap: wrap;
 }
 
 .book-card {
@@ -59,59 +70,87 @@
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 30%; /* Ajusta el ancho de las cartas según sea necesario */
+    width: 30%;
     align-items: center;
-    margin: 10px; /* Añade margen para separar las cartas */
+    margin: 10px;
+}
+
+.book-image-wrapper {
+    width: 30%; /* Ancho de la imagen */
+    margin-right: 20px; /* Espacio entre la imagen y el contenido */
 }
 
 .book-image {
-    width: 250px; /* Ajusta este valor según sea necesario */
-    height: auto; /* Mantiene la proporción de la imagen */
-    margin-right: 10px;
+    width: 315px;
+    height: 400px;
     border-radius: 4px;
-    
 }
 
 .book-details {
+    flex: 1; /* Ocupa el espacio restante */
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .book-title {
-    font-size: 1.2em;
-    margin: 0 0 10px 0;
+    font-size: 1.5em;
+    margin: 10px 0;
+    
+}
+
+.hola{
+    text-align: center;
+    font-size: 1.7em;
+}
+
+.Recientes{
+    text-align: center;
+    font-size: 1.7em;
 }
 
 .rating {
     display: flex;
     align-items: center;
-    margin-bottom: 10px; /* Añade espacio entre la calificación y el botón */
+    justify-content: flex-end; /* Alinea las estrellas hacia la derecha */
+    margin-top: auto; /* Alinea las estrellas hacia la parte inferior */
+    margin-bottom: 10px; /* Espacio entre las estrellas y el borde inferior */
 }
 
 .stars {
     color: gold;
-    margin-right: 5px;
+    margin-right: 10px; /* Espacio entre las estrellas y el texto de puntuación */
 }
 
 .score {
-    font-size: 1em;
+    font-size: 1.2em;
+    margin-right: 70px; 
 }
 
-.favorite-button {
+.favorite-button, .view-book-button {
     display: flex;
     align-items: center;
-    background-color: #EB5E28; /* Color de fondo del botón */
-    color: white; /* Color del texto */
-    border: none;
-    padding: 5px 10px;
+    justify-content: center;
+    background-color: #eb5e28; /* Color azul */
+    color: white;
+    border: none; /* Sin borde */
+    padding: 12px 24px; /* Aumentar el padding para hacer el botón más grande */
     border-radius: 4px;
     cursor: pointer;
     font-size: 1em;
+    margin: 5px 0; /* Espacio arriba y abajo del botón */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
 }
 
-.favorite-button .heart-icon {
-    width: 16px;
-    height: 16px;
-    margin-right: 5px;
+.favorite-button {
+    background-color: #eb5e28; /* Color del botón de favorito */
 }
+
+.view-book-button {
+    background-color: #eb5e28; /* Color azul */
+}
+
+.favorite-button:hover, .view-book-button:hover {
+    background-color: #eb5e28; /* Color azul más oscuro al pasar el mouse */
+}
+

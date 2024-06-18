@@ -1,1 +1,460 @@
-<p>categoria works!</p>
+<div class="card-menu">
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="¿Qué libro estás buscando?">
+        <button class="search-button">
+            <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Buscar" class="search-icon">
+        </button>
+    </div>
+    <p-menubar [model]="items"></p-menubar>
+    <a routerLink="/ruta-de-tu-apartado">
+        <img src="https://cdn-icons-png.flaticon.com/512/1626/1626656.png" alt="Imagen" class="menu-image">
+    </a>
+</div>
+
+
+
+<div class="Recientes">Categoria Juvenil</div>
+<br>
+
+<!-- Tarjetas de libros -->
+<div class="background">
+    <div class="book-card">
+        <img src="https://cdn.culturagenial.com/es/imagenes/ultimos-dias-en-berlin-cke.jpg" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">Ultimos dias en berlin</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.5</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button" > Ver libro</button>
+            </div>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://i.pinimg.com/736x/c0/7f/03/c07f0335aab7d6b4d32d90ab7ba9e7d5.jpg" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">El Hobbit de jhon</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.7</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button">Ver libro</button>
+            </div>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://assets.brightspot.abebooks.a2z.com/dims4/default/1965960/2147483647/strip/true/crop/331x500+0+0/resize/350x529!/quality/90/?url=http%3A%2F%2Fabebooks-brightspot.s3.us-west-2.amazonaws.com%2F3c%2F5b%2F8d2c2f4642b8bf40e74f66a56e6e%2Fcrimen.jpg" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">Crimen y Castigo</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.8</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button">Ver libro</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="background">
+    <div class="book-card">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/el-libro-negro-de-las-horas-1658509838.jpg?resize=980:*" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">Negro de horas</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.9</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button">Ver libro</button>
+            </div>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROpwC9EQfqC2r0zZ6gx5-fIZKSA2gx6wwcbA&s" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">Bajo la misma estrella</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.6</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button">Ver libro</button>
+            </div>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1668516406-514hltLWVcL._SL500_.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">El bosque de los susurros</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.4</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button">Ver libro</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <h1 class="hola">Categoria Misterio</h1>
+    <div class="background">
+    <div class="book-card">
+        <img src="https://www.planetadelibros.com.ec/usuaris/libros/fotos/275/m_libros/274482_portada_pasaje-al-misterio_francisco-renedo_201805221729.jpg" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">Pasajero al misterio</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.4</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button">Ver libro</button>
+            </div>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/81kl15rzqel-1660754131.jpg" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">Sherlock Holmes</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.4</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button">Ver libro</button>
+            </div>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/b8/c8/b8c8942db9a11926d45efad1de52f303.jpg" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">Misterios</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.4</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button">Ver libro</button>
+            </div>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://www.hola.com/images/026b-12b27ac8188c-8913d46014a1-1000/vertical-800/amigo-imaginario-de-stephen-chbosky-booket-.jpg" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">Amigo Imaginario</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.4</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button">Ver libro</button>
+            </div>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1639645529-la-bestia-mola-1639645522.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">La bestia</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.4</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button">Ver libro</button>
+            </div>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1639646878-reina-roja-gomez-1639646871.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">Reina Roja</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.4</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button">Ver libro</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tarjetas de entretenimiento -->
+<div class="Recientes">Categoria Entretenimiento</div>
+<br>
+
+<!-- Tarjetas categoria -->
+<div class="background">
+    <div class="book-card">
+        <img src="https://cdn.culturagenial.com/es/imagenes/ultimos-dias-en-berlin-cke.jpg" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">Ultimos dias en berlin</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.5</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button" > Ver libro</button>
+            </div>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://i.pinimg.com/736x/c0/7f/03/c07f0335aab7d6b4d32d90ab7ba9e7d5.jpg" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">El Hobbit de jhon</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.7</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button">Ver libro</button>
+            </div>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://assets.brightspot.abebooks.a2z.com/dims4/default/1965960/2147483647/strip/true/crop/331x500+0+0/resize/350x529!/quality/90/?url=http%3A%2F%2Fabebooks-brightspot.s3.us-west-2.amazonaws.com%2F3c%2F5b%2F8d2c2f4642b8bf40e74f66a56e6e%2Fcrimen.jpg" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">Crimen y Castigo</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.8</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button">Ver libro</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="background">
+    <div class="book-card">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/el-libro-negro-de-las-horas-1658509838.jpg?resize=980:*" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">Negro de horas</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.9</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button">Ver libro</button>
+            </div>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROpwC9EQfqC2r0zZ6gx5-fIZKSA2gx6wwcbA&s" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">Bajo la misma estrella</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.6</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button">Ver libro</button>
+            </div>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1668516406-514hltLWVcL._SL500_.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">El bosque de los susurros</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.4</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button">Ver libro</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <h1 class="hola">Categoria Misterio</h1>
+    <div class="background">
+    <div class="book-card">
+        <img src="https://www.planetadelibros.com.ec/usuaris/libros/fotos/275/m_libros/274482_portada_pasaje-al-misterio_francisco-renedo_201805221729.jpg" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">Pasajero al misterio</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.4</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button">Ver libro</button>
+            </div>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/81kl15rzqel-1660754131.jpg" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">Sherlock Holmes</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.4</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button">Ver libro</button>
+            </div>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/b8/c8/b8c8942db9a11926d45efad1de52f303.jpg" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">Misterios</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.4</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button">Ver libro</button>
+            </div>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://www.hola.com/images/026b-12b27ac8188c-8913d46014a1-1000/vertical-800/amigo-imaginario-de-stephen-chbosky-booket-.jpg" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">Amigo Imaginario</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.4</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button">Ver libro</button>
+            </div>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1639645529-la-bestia-mola-1639645522.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">La bestia</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.4</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button">Ver libro</button>
+            </div>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1639646878-reina-roja-gomez-1639646871.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">Reina Roja</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.4</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <button class="view-book-button">Ver libro</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
