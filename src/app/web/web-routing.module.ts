@@ -5,6 +5,8 @@ import { LibroComponent } from './libro/libro.component';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { CalificadosComponent } from './calificados/calificados.component';
 import { RecomendadosComponent } from './recomendados/recomendados.component';
+import { LibrodosComponent } from './librodos/librodos.component';
+import { LibrotresComponent } from './librotres/librotres.component';
 
 
 const routes: Routes = [
@@ -15,6 +17,14 @@ const routes: Routes = [
       {
         path: "libro",
         component: LibroComponent
+      },
+      {
+        path: "librodos",
+        component: LibrodosComponent
+      },
+      {
+        path: "librotres",
+        component: LibrotresComponent
       },
       {
         path: "categoria",
