@@ -1,0 +1,299 @@
+/* Estilos para la barra superior */
+.card-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: orange; 
+    padding: 8px;
+}
+
+.menu-image {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0; 
+    justify-content: flex-start;
+    padding-left: 20px;
+    margin-right: 900px; 
+    
+}
+
+.search-input {
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    font-size: 1em;
+    width: 250px;
+}
+
+.search-button {
+    padding: 5px 10px;
+    background-color: transparent; 
+    border: 2px solid black;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+   
+}
+
+.search-button .search-icon {
+    width: 16px;
+    height: 13px;
+}
+
+.menu-bar {
+    margin-left: auto;
+}
+
+
+
+.background-section {
+    flex: 0.5; 
+    background: #F0E6D5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-section {
+    flex: 2.5; 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+    justify-content: center; 
+    padding: 20px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.responsive-image {
+    width: 100%;
+    max-width: 300px; 
+    height: auto;
+    border: 2px solid black; 
+    border-radius: 8px; 
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    max-width: 500px; 
+    margin-top: 10px;
+}
+
+.text-container {
+    flex: 1; 
+    margin-left: 100px;
+    max-width: 500px;
+    font-size: 1.9rem;
+}
+.text-container h2,h3{
+    font-weight: bold;
+    color: black;
+
+}
+
+.text-container p{
+    color: black;
+}
+
+.stars-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+
+}
+
+.stars-container .pi-star {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ccc; 
+    margin-right: 5px;
+}
+
+.stars-container .pi-star.rated {
+    color: #f1c40f; 
+}
+
+
+/* Estilos para el responsive-container */
+.responsive-container {
+    flex: 1; /* Ocupa el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea elementos a la izquierda */
+    justify-content: center;
+    padding: 20px; /* Espaciado interno */
+    align-items: center; /* Alinea elementos al centro */
+}
+
+.background-section {
+    flex: 0.5; /* Ocupa la mitad del espacio disponible */
+    background: #F0E6D5; /* Color de fondo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-section {
+    flex: 2.5; /* Ocupa más espacio que el background-section */
+    display: flex;
+    flex-direction: row; /* Alineación horizontal del contenido */
+    align-items: flex-start; /* Alinea elementos a la izquierda */
+    justify-content: center; /* Centra horizontalmente */
+    padding: 20px; /* Espaciado interno */
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.responsive-image {
+    width: 100%;
+    max-width: 300px; /* Ajusta el tamaño máximo de la imagen */
+    height: auto;
+    border: 2px solid black; /* Borde de la imagen */
+    border-radius: 8px; /* Borde redondeado */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px; /* Ajusta según sea necesario */
+    margin-top: 10px; /* Espacio superior */
+}
+
+.text-container {
+    flex: 1; /* Ocupa el espacio restante */
+    margin-left: 20px; /* Márgen izquierdo */
+    max-width: 500px; /* Ancho máximo */
+    font-size: 1.9rem; /* Tamaño de fuente */
+}
+
+.text-container h2, .text-container h3 {
+    font-weight: bold; /* Fuente en negrita */
+    color: black; /* Color de texto */
+}
+
+.text-container p {
+    color: black; /* Color de texto */
+}
+
+.stars-container {
+    display: flex;
+    justify-content: flex-start; /* Justificación a la izquierda */
+    margin-bottom: 10px; /* Espacio inferior */
+    font-size: 1.5rem; /* Tamaño de fuente */
+}
+
+.stars-container .pi-star {
+    font-size: 1.5rem; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor apuntador */
+    color: #ccc; /* Color de estrella por defecto */
+    margin-right: 5px; /* Espacio derecho */
+}
+
+.stars-container .pi-star.rated {
+    color: #f1c40f; /* Color de estrella seleccionada */
+}
+
+/* Estilos para la sección de comentarios */
+.comments-container {
+    width: 100%; /* Ocupa el 100% del ancho */
+    padding: 20px; /* Espaciado interno */
+    background-color: #F0E6D5; /* Color de fondo para la sección de comentarios */
+    border-left: 1px solid #ccc; /* Borde izquierdo para separar del contenido principal */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.comments-container h2 {
+    font-size: 2em; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Texto en negrita */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.comment-list {
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.comment {
+    display: flex;
+    margin-bottom: 15px; /* Espacio inferior */
+}
+
+.user-avatar {
+    width: 40px; /* Ancho del avatar */
+    height: 40px; /* Alto del avatar */
+    border-radius: 50%; /* Borde redondeado */
+    background-color: #ccc; /* Color de fondo para el avatar */
+    margin-right: 10px; /* Espacio derecho */
+}
+
+.user-avatar img {
+    width: 100%; /* Ajusta la imagen del avatar al tamaño del contenedor */
+    height: 100%; /* Ajusta la imagen del avatar al tamaño del contenedor */
+    border-radius: 50%; /* Borde redondeado para la imagen */
+}
+
+.comment-content {
+    flex: 1; /* Ocupa el espacio restante */
+}
+
+.comment-date {
+    font-size: 0.8em; /* Tamaño de fuente para la fecha del comentario */
+    color: #666; /* Color de texto para la fecha del comentario */
+}
+
+.comment-form {
+    margin-top: 20px; /* Espacio superior */
+}
+
+.comment-input {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Relleno */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 4px; /* Borde redondeado */
+    resize: vertical; /* Permitir redimensionar verticalmente */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+.comment-submit {
+    background-color: #007bff; /* Color de fondo para el botón */
+    color: #fff; /* Color de texto para el botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Relleno */
+    border-radius: 4px; /* Borde redondeado */
+    cursor: pointer; /* Cursor apuntador */
+    transition: background-color 0.3s ease; /* Transición de color de fondo */
+}
+
+.comment-submit:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
+hr {
+    border: 1px solid black; /* Borde de 1px de grosor y color negro */
+}

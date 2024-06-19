@@ -3,14 +3,15 @@ import { MenuItem } from 'primeng/api';
 import { MessageService } from 'primeng/api';
 import { MenubarModule } from 'primeng/menubar';
 import { ButtonModule } from 'primeng/button';
-import { ToastModule } from 'primeng/toast';  // Importa el módulo ToastModule
+import { ToastModule } from 'primeng/toast';  
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-categoria',
   standalone: true,
-  imports: [MenubarModule, ButtonModule, ToastModule],  // Agrega ToastModule y ButtonModule a los imports
+  imports: [MenubarModule, ButtonModule, ToastModule,RouterModule],  
   templateUrl: './categoria.component.html',
-  styleUrls: ['./categoria.component.scss']  // Corrección de styleUrl a styleUrls
+  styleUrls: ['./categoria.component.scss']  
 })
 export class CategoriaComponent implements OnInit {
 
@@ -24,6 +25,11 @@ export class CategoriaComponent implements OnInit {
 
   ngOnInit() {
     this.items = [
+      {
+        label: 'Inicio',
+        icon: 'pi pi-fw pi-id-card',
+        routerLink: ['/web/inicio']
+      },
       {
         label: 'Mejores calificados',
         icon: 'pi pi-fw pi-id-card',
