@@ -1,1 +1,114 @@
-<p>librodos works!</p>
+<div class="card-menu">
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Buscar...">
+        <button class="search-button">
+            <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Buscar" class="search-icon">
+        </button>
+    </div>
+    <p-menubar [model]="items"></p-menubar>
+    <a routerLink="/ruta-de-tu-apartado">
+        <img src="https://cdn-icons-png.flaticon.com/512/1626/1626656.png" alt="Imagen" class="menu-image">
+    </a>
+</div>
+<br>
+<div class="responsive-container">
+    <div class="background-section">
+        <div class="content-section">
+            <div class="image-container">
+                <img src="https://images.cdn2.buscalibre.com/fit-in/360x360/40/fa/40fa6a6657f79a3752fbf7a8501ccebd.jpg" alt="Descripción de la imagen" class="responsive-image" />
+                <div class="button-container">
+                    <p-button label="Favorito♥️" [outlined]="true" severity="warning"></p-button>
+                </div>
+            </div>
+            <div class="text-container">
+                <h2>El arte de la guerra</h2>
+                <div class="stars-container">
+                    <i class="pi pi-star" *ngFor="let star of [1, 2, 3, 4, 5]" [ngClass]="{'rated': star <= currentRating}" (click)="rate(star)"></i>
+                </div>
+                <p>Género: Tratado militar, estrategia.</p>
+                <p>AÑO DE PUBLICACIÓN: El texto original data del siglo V a.C.</p>
+                <p>LENGUAJE:  Chino antiguo (originalmente)</p>
+                <h3>Sinopsis del Libro:</h3>
+                <p>
+                    Es un tratado clásico chino sobre estrategia militar y tácticas de combate, atribuido a Sun Tzu, un general, estratega militar y filósofo de la antigua China. Este libro es conocido por su profundidad y sabiduría en cuanto a la planificación estratégica, la táctica militar y la diplomacia
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="comments-container">
+    <h2 style="font-weight: bold;">Reseñas</h2>
+    <div class="comment-list">
+        <!-- Primer comentario -->
+        <div class="comment" style="background-color: white; border-radius: 10px;">
+            <div class="user-avatar">
+                <img src="https://i.pinimg.com/474x/36/e8/c4/36e8c4621edf182f9b4cf9ed13ba5679.jpg" alt="Avatar de Usuario 1">
+            </div>
+            <div class="comment-content">
+                <p><strong>Nombre del Usuario 1</strong></p>
+                <p>Las mil y una noches es un viaje fascinante a través de cuentos mágicos y exóticos. Me encantó cómo cada historia se entrelaza con la siguiente, creando un universo de personajes inolvidables y situaciones intrigantes.</p>
+                <p class="comment-date">10 de junio de 2024</p>
+            </div>
+        </div>
+        <hr>
+        
+        <!-- Segundo comentario -->
+        <div class="comment" style="background-color: white; border-radius: 10px;">
+            <div class="user-avatar">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfzQ6v5BE9Zye8ZQvdCjCvqK3eoS4hgEGNw4ZD9F301qx5L7wBSou9TJCUSLOP59eQZ6w&usqp=CAU" alt="Avatar de Usuario 2">
+            </div>
+            <div class="comment-content">
+                <p><strong>Nombre del Usuario 2</strong></p>
+                <p>Este libro es una joya literaria. La forma en que Scheherazade utiliza su ingenio para mantener al rey intrigado con sus historias es simplemente brillante. Me cautivó desde la primera página hasta la última.</p>
+                <p class="comment-date">5 de junio de 2024</p>
+            </div>
+        </div>
+        <hr>
+        
+        <!-- Tercer comentario -->
+        <div class="comment" style="background-color: white; border-radius: 10px;">
+            <div class="user-avatar">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/023/450/409/small_2x/lilo-and-stitch-cartoon-poses-editorial-free-vector.jpg" alt="Avatar de Usuario 3">
+            </div>
+            <div class="comment-content">
+                <p><strong>Nombre del Usuario 3</strong></p>
+                <p>Las mil y una noches es un clásico que nunca pasa de moda. Cada relato es una ventana a un mundo de fantasía y cultura árabe. Una lectura que recomendaría a cualquiera que disfrute de la narrativa rica en detalles y mitología.</p>
+                <p class="comment-date">2 de junio de 2024</p>
+            </div>
+        </div>
+        <hr>
+        
+        <!-- Cuarto comentario -->
+        <div class="comment" style="background-color: white; border-radius: 10px;">
+            <div class="user-avatar">
+                <img src="https://i.pinimg.com/736x/ca/2f/ed/ca2fedd61bd56712e126584d7722ff5f.jpg" alt="Avatar de Usuario 4">
+            </div>
+            <div class="comment-content">
+                <p><strong>Nombre del Usuario 4</strong></p>
+                <p>Me emocionó profundamente, una lectura obligatoria.</p>
+                <p class="comment-date">28 de mayo de 2024</p>
+            </div>
+        </div>
+        <hr>
+        
+        <!-- Quinto comentario -->
+        <div class="comment" style="background-color: white; border-radius: 10px;">
+            <div class="user-avatar">
+                <img src="https://i.pinimg.com/736x/d2/a3/a6/d2a3a6440acbce3858d7ac4e281a7782.jpg" alt="Avatar de Usuario 5">
+            </div>
+            <div class="comment-content">
+                <p><strong>Nombre del Usuario 5</strong></p>
+                <p>Me fascinó la diversidad de historias que ofrece este libro. Desde cuentos de amor y traición hasta aventuras épicas, cada noche con Scheherazade me dejaba esperando con ansias la siguiente narración. Definitivamente, un clásico que merece la pena leer.</p>
+                <p class="comment-date">15 de mayo de 2024</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Área para agregar comentarios -->
+    <form class="comment-form">
+        <textarea class="comment-input" placeholder="Escribe tu comentario..."></textarea>
+        <button type="submit" class="comment-submit">Enviar</button>
+    </form>
+</div>
+

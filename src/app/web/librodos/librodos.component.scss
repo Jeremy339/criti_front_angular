@@ -1,0 +1,300 @@
+/* Estilos para la barra superior */
+.card-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: orange; 
+    padding: 8px;
+}
+
+.menu-image {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0; 
+    justify-content: flex-start;
+    padding-left: 20px;
+    margin-right: 900px; 
+    
+}
+
+.search-input {
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    font-size: 1em;
+    width: 250px;
+}
+
+.search-button {
+    padding: 5px 10px;
+    background-color: transparent; 
+    border: 2px solid black;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+   
+}
+
+.search-button .search-icon {
+    width: 16px;
+    height: 13px;
+}
+
+.menu-bar {
+    margin-left: auto;
+}
+
+
+
+.background-section {
+    flex: 0.5; 
+    background: #F0E6D5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-section {
+    flex: 2.5; 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+    justify-content: center; 
+    padding: 20px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+}
+
+.responsive-image {
+    width: 100%;
+    max-width: 300px; 
+    height: auto;
+    border: 2px solid black; 
+    border-radius: 8px; 
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    max-width: 500px; 
+    margin-top: 10px;
+}
+
+.text-container {
+    flex: 1; 
+    margin-left: 100px;
+    max-width: 500px;
+    font-size: 1.9rem;
+}
+.text-container h2,h3{
+    font-weight: bold;
+    color: black;
+
+}
+
+.text-container p{
+    color: black;
+}
+
+.stars-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+
+}
+
+.stars-container .pi-star {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ccc; 
+    margin-right: 5px;
+}
+
+.stars-container .pi-star.rated {
+    color: #f1c40f; 
+}
+
+
+/* Estilos para el responsive-container */
+.responsive-container {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center;
+    padding: 20px;
+    align-items: center; 
+}
+
+.background-section {
+    flex: 0.5; 
+    background: #F0E6D5; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-section {
+    flex: 2.5;
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start; 
+    justify-content: center; 
+    padding: 20px; 
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.responsive-image {
+    width: 100%;
+    max-width: 300px; 
+    height: auto;
+    border: 2px solid black; 
+    border-radius: 8px; 
+    margin-bottom: 20px; 
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px; 
+    margin-top: 10px; 
+}
+
+.text-container {
+    flex: 1; 
+    margin-left: 20px; 
+    max-width: 500px; 
+    font-size: 1.9rem; 
+}
+
+.text-container h2, .text-container h3 {
+    font-weight: bold; 
+    color: black; 
+}
+
+.text-container p {
+    color: black; 
+}
+
+.stars-container {
+    display: flex;
+    justify-content: flex-start; 
+    margin-bottom: 10px; 
+    font-size: 1.5rem; 
+}
+
+.stars-container .pi-star {
+    font-size: 1.5rem; 
+    cursor: pointer; 
+    color: #ccc;
+    margin-right: 5px; 
+}
+
+.stars-container .pi-star.rated {
+    color: #f1c40f;
+}
+
+/* Estilos para la sección de comentarios */
+.comments-container {
+    width: 100%; 
+    padding: 20px; 
+    background-color: #F0E6D5; 
+    border-left: 1px solid #ccc; 
+    margin-top: 20px; 
+}
+
+.comments-container h2 {
+    font-size: 2em; 
+    font-weight: bold; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.comment-list {
+    margin-bottom: 20px; 
+}
+
+.comment {
+    display: flex;
+    margin-bottom: 15px; 
+}
+
+.user-avatar {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    background-color: #ccc; 
+    margin-right: 10px; 
+}
+
+.user-avatar img {
+    width: 100%; 
+    height: 100%; 
+    border-radius: 50%; 
+}
+
+.comment-content {
+    flex: 1; 
+}
+
+.comment-date {
+    font-size: 0.8em; 
+    color: #666; 
+}
+
+.comment-form {
+    margin-top: 20px; 
+}
+
+.comment-input {
+    width: 100%;
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    resize: vertical; 
+    margin-bottom: 10px; 
+}
+
+.comment-submit {
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px;
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.comment-submit:hover {
+    background-color: #0056b3; 
+}
+
+hr {
+    border: 1px solid black; 
+}
