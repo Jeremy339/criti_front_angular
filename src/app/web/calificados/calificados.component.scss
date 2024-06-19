@@ -21,9 +21,9 @@
     align-items: center;
     margin-bottom: 0; /* Asegurar que no haya margen inferior */
     justify-content: flex-start;
-    padding-left: 20px;
+    padding-left: 1px;
     margin-right: 950px; /* Asegurar que el menú se desplace a la derecha */
-    margin-left: 145px; /* Ajuste opcional para el margen derecho */
+    margin-left: 40px; /* Ajuste opcional para el margen derecho */
 }
 
 .search-input {
@@ -54,7 +54,6 @@
     margin-left: 45px;
 }
 
-/* Estilos para las cartas de libros */
 /* Estilos para las cartas de libros */
 .background {
     display: flex;

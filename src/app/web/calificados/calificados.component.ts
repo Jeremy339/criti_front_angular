@@ -3,15 +3,18 @@ import { MenuItem, MessageService } from 'primeng/api';
 import { MenubarModule } from 'primeng/menubar';
 import { ButtonModule } from 'primeng/button';
 import { ToastModule } from 'primeng/toast';  
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-calificados',
   standalone: true,
-  imports: [MenubarModule, ButtonModule, ToastModule],
+  imports: [MenubarModule, ButtonModule, ToastModule, CommonModule, RouterModule],
   templateUrl: './calificados.component.html',
   styleUrl: './calificados.component.scss'
 })
-export class CalificadosComponent implements OnInit{
+export class CalificadosComponent implements OnInit {
+
   items: MenuItem[] = [];
 
   constructor(private messageService: MessageService) {}
@@ -23,9 +26,9 @@ export class CalificadosComponent implements OnInit{
   ngOnInit() {
     this.items = [
       {
-        label: 'Categorias',
+        label: 'Mejores calificados',
         icon: 'pi pi-fw pi-id-card',
-        routerLink: ['/web/categoria']
+        routerLink: ['/web/calificados']
       },
       {
         label: 'Recomendados',
@@ -35,6 +38,7 @@ export class CalificadosComponent implements OnInit{
     ];
   }
 }
+
 
 
 
