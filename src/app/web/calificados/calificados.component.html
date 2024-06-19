@@ -1,4 +1,5 @@
 <div class="card-menu">
+<<<<<<< HEAD
         <div class="search-container">
             <input type="text" class="search-input" placeholder="¿Qué libro estás buscando?">
             <button class="search-button">
@@ -9,7 +10,20 @@
         <div class="menu-bar">
             <p-menubar [model]="items"></p-menubar>
         </div>
+=======
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="¿Qué libro estás buscando?">
+        <button class="search-button">
+            <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Buscar" class="search-icon">
+        </button>
+>>>>>>> fda2bdd1be91bdb82c150554f0cf955ed4b59845
     </div>
+    <p-menubar [model]="items"></p-menubar>
+    <a routerLink="/ruta-de-tu-apartado">
+        <img src="https://cdn-icons-png.flaticon.com/512/1626/1626656.png" alt="Imagen" class="menu-image">
+    </a>
+</div>
+
 
     <div class="background">
         <div class="book-card">
@@ -117,6 +131,19 @@
                 <div class="rating">
                     <span class="stars">★★★★★</span>
                     <span class="score">4.4</span>
+                </div>
+                <div class="card flex justify-content-center">
+                    <button class="view-book-button">Ver libro</button>
+                </div>
+            </div>
+        </div>
+        <div class="book-card">
+            <img src="https://i.blogs.es/c55c2e/1366_2000-1-/450_1000.jpeg" alt="Imagen del libro" class="book-image">
+            <div class="book-details">
+                <h3 class="book-title">Farsa de amor</h3>
+                <div class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="score">4.3</span>
                 </div>
                 <div class="card flex justify-content-center">
                     <button class="view-book-button">Ver libro</button>

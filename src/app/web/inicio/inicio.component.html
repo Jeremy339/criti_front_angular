@@ -1,7 +1,7 @@
 <!-- Barra superior -->
 <div class="card-menu">
     <div class="search-container">
-        <input type="text" class="search-input" placeholder="Buscar...">
+        <input type="text" class="search-input" placeholder="¿Qué libro estás buscando?">
         <button class="search-button">
             <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Buscar" class="search-icon">
         </button>
@@ -143,12 +143,12 @@
     <h1 class="hola">libros mas visitados</h1>
     <div class="background">
     <div class="book-card">
-        <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/a6/18/a618be10eae5c2a608ec6e22e6917e29.jpg" alt="Imagen del libro" class="book-image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgBlvGBobJ_izTgh0UOcIQ9xmemxsVbPAQWg&s" alt="Imagen del libro" class="book-image">
         <div class="book-details">
-            <h3 class="book-title">Don Quijote de la Mancha</h3>
+            <h3 class="book-title">Laguerra del fin del mundo</h3>
             <div class="rating">
                 <span class="stars">★★★★★</span>
-                <span class="score">4.4</span>
+                <span class="score">4.6</span>
             </div>
             <div class="card flex justify-content-center">
                 <p-toast></p-toast>
@@ -162,12 +162,12 @@
         </div>
     </div>
     <div class="book-card">
-        <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/a6/18/a618be10eae5c2a608ec6e22e6917e29.jpg" alt="Imagen del libro" class="book-image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzvcGEPW4RFjl6lE5Xe0MO02Ac-AIaz3QZ9g&s" alt="Imagen del libro" class="book-image">
         <div class="book-details">
-            <h3 class="book-title">Don Quijote de la Mancha</h3>
+            <h3 class="book-title">Ultimos dias en berlin</h3>
             <div class="rating">
                 <span class="stars">★★★★★</span>
-                <span class="score">4.4</span>
+                <span class="score">4.3</span>
             </div>
             <div class="card flex justify-content-center">
                 <p-toast></p-toast>
@@ -181,12 +181,69 @@
         </div>
     </div>
     <div class="book-card">
-        <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/a6/18/a618be10eae5c2a608ec6e22e6917e29.jpg" alt="Imagen del libro" class="book-image">
+        <img src="https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/6ab261b1-8f5c-4fd8-b766-9f08ab6c06dd/m_175_310/portada_alas-de-sangre-empireo-1_rebecca-yarros_202309141523.webp" alt="Imagen del libro" class="book-image">
         <div class="book-details">
-            <h3 class="book-title">Don Quijote de la Mancha</h3>
+            <h3 class="book-title">Alas de sangre</h3>
             <div class="rating">
                 <span class="stars">★★★★★</span>
-                <span class="score">4.4</span>
+                <span class="score">4.1</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <a routerLink="/web/calificados" class="p-button font-bold">
+                    Ver libros
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://cdn.culturagenial.com/es/imagenes/la-sombra-del-viento-portada-cke.jpg" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">La sombra del viento</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.8</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <a routerLink="/web/calificados" class="p-button font-bold">
+                    Ver libros
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://www.planetadelibros.com/usuaris/libros/thumbs/075d5b16-158e-4f67-affb-85b5ebec2088/m_175_310/portada_gracias-al-miedo_cristina-pedroche_202405231305.webp" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">Gracias al miedo</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.9</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <a routerLink="/web/calificados" class="p-button font-bold">
+                    Ver libros
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/elabismo-1571043130.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">El abismo profundo</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.1</span>
             </div>
             <div class="card flex justify-content-center">
                 <p-toast></p-toast>

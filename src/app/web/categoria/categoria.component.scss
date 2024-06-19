@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: orange; 
+    background-color: orange; /* Este es el fondo naranja */
     padding: 8px;
 }
 
@@ -19,11 +19,11 @@
 .search-container {
     display: flex;
     align-items: center;
-    margin-bottom: 0; 
+    margin-bottom: 0; /* Asegurar que no haya margen inferior */
     justify-content: flex-start;
     padding-left: 20px;
-    margin-right: 950px; 
-    margin-left: 95px; 
+    margin-right: 950px; /* Asegurar que el menú se desplace a la derecha */
+    
 }
 
 .search-input {
@@ -37,7 +37,7 @@
 
 .search-button {
     padding: 5px 10px;
-    background-color: transparent; 
+    background-color: transparent; /* Fondo transparente */
     border: 2px solid black;
     border-left: none;
     border-radius: 0 4px 4px 0;
@@ -51,9 +51,8 @@
 }
 
 .menu-bar {
-    margin-left: 45px;
+    margin-left: auto; /* Mueve el menú más a la derecha */
 }
-
 /* Estilos para las cartas de libros */
 
 .background {
@@ -96,10 +95,10 @@
 .book-title {
     font-size: 1.5em;
     margin: 10px 0;
-    margin-left: 20px;
+    text-align: center;
+
     
 }
-
 .hola{
     text-align: center;
     font-size: 1.7em;

@@ -14,8 +14,8 @@ import { RouterModule } from '@angular/router';
   styleUrl: './calificados.component.scss'
 })
 export class CalificadosComponent implements OnInit {
-
   items: MenuItem[] = [];
+  currentRating: number = 0;
 
   constructor(private messageService: MessageService) {}
 
@@ -26,17 +26,23 @@ export class CalificadosComponent implements OnInit {
   ngOnInit() {
     this.items = [
       {
-        label: 'Mejores calificados',
+        label: 'Inicio',
         icon: 'pi pi-fw pi-id-card',
-        routerLink: ['/web/calificados']
+        routerLink: ['/web/inicio']
+      },
+      {
+        label: 'Categorías',
+        icon: 'pi pi-fw pi-id-card',
+        routerLink: ['/web/categoria']
       },
       {
         label: 'Recomendados',
         icon: 'pi pi-fw pi-id-card',
         routerLink: ['/web/recomendados']
       }
+
     ];
-  }
+  } 
 }
 
 
