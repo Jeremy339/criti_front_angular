@@ -23,6 +23,11 @@ export class CalificadosComponent implements OnInit{
   ngOnInit() {
     this.items = [
       {
+        label: 'Inicio',
+        icon: 'pi pi-fw pi-id-card',
+        routerLink: ['/web/inicio']
+      },
+      {
         label: 'Categorias',
         icon: 'pi pi-fw pi-id-card',
         routerLink: ['/web/categoria']

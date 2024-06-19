@@ -23,7 +23,7 @@
     justify-content: flex-start;
     padding-left: 20px;
     margin-right: 950px; /* Asegurar que el menú se desplace a la derecha */
-    margin-left: 145px; /* Ajuste opcional para el margen derecho */
+    
 }
 
 .search-input {
@@ -51,7 +51,7 @@
 }
 
 .menu-bar {
-    margin-left: 45px;
+    margin-left: auto; /* Mueve el menú más a la derecha */
 }
 
 /* Estilos para las cartas de libros */
@@ -96,7 +96,8 @@
 .book-title {
     font-size: 1.5em;
     margin: 10px 0;
-    margin-left: 20px;
+    text-align: center;
+
     
 }
 
@@ -155,3 +156,14 @@
 .favorite-button:hover, .view-book-button:hover {
     background-color: #eb5e28; /* Color azul más oscuro al pasar el mouse */
 }
+
+.card.flex.justify-content-center a.p-button.font-bold {
+    background-color: #eb5e28; /* Color naranja */
+    color: black; /* Color del texto */
+    border-color: #eb5e28; /* Color del borde (opcional) */
+  }
+  
+  .card.flex.justify-content-center a.p-button.font-bold:hover {
+    background-color: #eb5e28; /* Cambia el color al pasar el mouse */
+    border-color: #eb5e28; /* Cambia el color del borde al pasar el mouse */
+  }

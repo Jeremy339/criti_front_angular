@@ -1,1 +1,201 @@
-<p>recomendados works!</p>
+
+<!-- Barra superior -->
+<div class="card-menu">
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Buscar...">
+        <button class="search-button">
+            <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Buscar" class="search-icon">
+        </button>
+    </div>
+    <p-menubar [model]="items"></p-menubar>
+    <a routerLink="/ruta-de-tu-apartado">
+        <img src="https://cdn-icons-png.flaticon.com/512/1626/1626656.png" alt="Imagen" class="menu-image">
+    </a>
+</div>
+
+
+<div class="Recientes">¡Mejores Recomendanciones!</div>
+
+<!-- Tarjetas de libros -->
+<div class="background">
+    <div class="book-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROpwC9EQfqC2r0zZ6gx5-fIZKSA2gx6wwcbA&s" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+          <h3 class="book-title">Bajo la misma estrella</h3>
+          <div class="rating">
+            <span class="stars">★★★★★</span>
+            <span class="score">4.5</span>
+          </div>
+          <div class="card flex justify-content-center">
+            <p-toast></p-toast>
+            <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+          </div>
+          <div class="card flex justify-content-center">
+            <a routerLink="/web/libro" class="p-button font-bold">
+                Ver libros
+            </a>
+        </div>
+        </div>
+      </div>
+      
+     
+
+    <div class="book-card">
+        <img src="https://media.revistagq.com/photos/6040d3feea88c7db6f596e49/master/w_320%2Cc_limit/61aTf+8b6qL.jpg" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">El arte de la guerra</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.7</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <a routerLink="/web/librodos" class="p-button font-bold">
+                    Ver libros
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://m.media-amazon.com/images/I/41W7K2EFJ6L._SX195_.jpg" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">Grandes Ezperanzas</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.8</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <a routerLink="/web/librotres" class="p-button font-bold">
+                    Ver libros
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="background">
+    <div class="book-card">
+        <img src="https://static.wixstatic.com/media/f145c5_6f0a1b547e3047aa88777546dd77df2e~mv2.jpg/v1/fill/w_211,h_300,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Port_page-0001.jpg" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">Ciudades</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.9</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <a routerLink="/web/calificados" class="p-button font-bold">
+                    Ver libros
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg0n4LtszDja9gdMZQorFN7X5ZEYOPHawi4myqK4MYVmmMTsb8AsyywxfdFKmnbXOaQwegCVUEF6gyH251YLO9-3sKBnD2CZ3tOGAJy-SBej1T9bnJz9WEu7NrPzje4zm_MThdeukFwzVgEoOUdvcZ3YhtVBLXelsoSgcxP_zbLPGuyLU_jx-fqeqGGQ/s564/xthumb_26638_portadas_big.jpeg.pagespeed.ic.65bwU8jmCp.webp" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">El otro lado</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.6</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <a routerLink="/web/calificados" class="p-button font-bold">
+                    Ver libros
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/a6/18/a618be10eae5c2a608ec6e22e6917e29.jpg" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">Don Quijote de la Mancha</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.4</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <a routerLink="/web/calificados" class="p-button font-bold">
+                    Ver libros
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1680247059-51msPvqxWL._SL500_.jpg?crop=0.926xw:1xh;center,top&resize=980:*" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">El jadrin secreto</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.4</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <a routerLink="/web/calificados" class="p-button font-bold">
+                    Ver libros
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREYbfp7rUgmJyNU74CMt0HzWgfY2JYlgVnSztB6kwF3u5VeylGCsqFcBdHbqHLfa4DcIY&usqp=CAU" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">El lago secreto</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.4</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <a routerLink="/web/calificados" class="p-button font-bold">
+                    Ver libros
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="book-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfYsUgMaGWIym454zDZHUpEekCcJFWhpD6aA&s" alt="Imagen del libro" class="book-image">
+        <div class="book-details">
+            <h3 class="book-title">Alicia en el pais de las marravillas</h3>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="score">4.4</span>
+            </div>
+            <div class="card flex justify-content-center">
+                <p-toast></p-toast>
+                <p-button pRipple (click)="show()" label="">Marcar como favorito</p-button>
+            </div>
+            <div class="card flex justify-content-center">
+                <a routerLink="/web/calificados" class="p-button font-bold">
+                    Ver libros
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+  
