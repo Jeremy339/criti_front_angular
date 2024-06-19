@@ -14,6 +14,12 @@ export class LibroService {
     return this.http.get(`${this.baseUrl}/libro/back`)
   }
   funGuardar(registro:any){
-    return this.http.post(`${this.baseUrl}/libro/back`, registro)
+    return this.http.post(`${this.baseUrl}/libro`, registro)
+  }
+  funModificar (id:number, registro:any){
+    return this.http.patch(`${this.baseUrl}/libro/${id}`, registro)
+  }
+  funEliminar (id:number){
+    return this.http.delete(`${this.baseUrl}/libro/${id}`)
   }
 }
